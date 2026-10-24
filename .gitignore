@@ -1,10 +1,15 @@
+
 # Node / Frontend
 node_modules/
 dist/
 dist-ssr/
 *.local
+
+# Environment files and secrets
 .env
-.env.production
+.env.*
+!.env.example
+!.env.*.example
 frontend/.env
 backend/.env
 
@@ -46,3 +51,14 @@ htmlcov/
 .DS_Store
 Thumbs.db
 *.log
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local databases and backups
+*.sqlite3
+*.db
+*.bak
